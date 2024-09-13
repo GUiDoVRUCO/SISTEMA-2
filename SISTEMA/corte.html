@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Corte de Cabelo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agendamento de Corte de Cabelo</h1>
+            <a href="index.html" class="btn back">Voltar</a>
+        </header>
+        <main>
+            <section id="schedule">
+                <h2>Horários Disponíveis</h2>
+                <ul id="timeSlots">
+                    <!-- Horários serão adicionados aqui pelo JavaScript -->
+                </ul>
+            </section>
+            <section id="bookingForm">
+                <h2>Agendar Horário</h2>
+                <label for="timeSelect">Escolha um horário:</label>
+                <select id="timeSelect">
+                    <!-- Horários serão adicionados aqui pelo JavaScript -->
+                </select>
+                <label for="serviceSelect">Escolha um serviço:</label>
+                <select id="serviceSelect">
+                    <option value="corte">Corte (60 min) - R$ 25</option>
+                </select>
+                <button onclick="bookTime()">Agendar</button>
+            </section>
+            <section id="priceTable">
+                <h2>Tabela de Preços e Tempo</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Serviço</th>
+                            <th>Duração</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Corte</td>
+                            <td>60 min</td>
+                            <td>R$ 25</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="script-corte.js"></script>
+</body>
+</html>

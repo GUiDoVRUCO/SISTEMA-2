@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Química</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agendamento de Química</h1>
+            <a href="index.html" class="btn back">Voltar</a>
+        </header>
+        <main>
+            <section id="schedule">
+                <h2>Horários Disponíveis</h2>
+                <ul id="timeSlots">
+                    <!-- Horários serão adicionados aqui pelo JavaScript -->
+                </ul>
+            </section>
+            <section id="bookingForm">
+                <h2>Agendar Horário</h2>
+                <label for="timeSelect">Escolha um horário:</label>
+                <select id="timeSelect">
+                    <!-- Horários serão adicionados aqui pelo JavaScript -->
+                </select>
+                <label for="serviceSelect">Escolha um serviço:</label>
+                <select id="serviceSelect">
+                    <option value="reflexo">Reflexo (30 min) - R$ 70</option>
+                    <option value="nevou">Nevou (45 min) - R$ 80</option>
+                    <option value="luzes">Luzes (90 min) - R$ 300</option>
+                    <option value="pigmentacao">Pigmentação (60 min) - R$ 200</option>
+                    <option value="alinhamento">Alinhamento (20 min) - R$ 80</option>
+                    <option value="alisamento">Alisamento (120 min) - R$ 350</option>
+                </select>
+                <button onclick="bookTime()">Agendar</button>
+            </section>
+            <section id="priceTable">
+                <h2>Tabela de Preços e Tempo</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Serviço</th>
+                            <th>Duração</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Reflexo</td>
+                            <td>30 min</td>
+                            <td>R$ 70</td>
+                        </tr>
+                        <tr>
+                            <td>Nevou</td>
+                            <td>45 min</td>
+                            <td>R$ 80</td>
+                        </tr>
+                        <tr>
+                            <td>Luzes</td>
+                            <td>90 min</td>
+                            <td>R$ 300</td>
+                        </tr>
+                        <tr>
+                            <td>Pigmentação</td>
+                            <td>60 min</td>
+                            <td>R$ 200</td>
+                        </tr>
+                        <tr>
+                            <td>Alinhamento</td>
+                            <td>20 min</td>
+                            <td>R$ 80</td>
+                        </tr>
+                        <tr>
+                            <td>Alisamento</td>
+                            <td>120 min</td>
+                            <td>R$ 350</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="script-quimica.js"></script>
+</body>
+</html>
